@@ -71,6 +71,11 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
 
+        it('Menu display when clicked', function(){
+            $('.menu-icon-link').trigger('click');
+            expect($('.menu-hidden').length).toBe(0);
+        });
+
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
