@@ -76,6 +76,11 @@ $(function() {
             expect($('.menu-hidden').length).toBe(0);
         });
 
+        it('Menu hide when clicked again', function(){
+            $('.menu-icon-link').trigger('click');
+            expect($('.menu-hidden').length).toBe(1);
+        });
+
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
